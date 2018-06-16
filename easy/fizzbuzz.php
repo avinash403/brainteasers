@@ -1,21 +1,23 @@
 <?php 
 
-function fizzbuzz($limit)
+function fizzbuzz(int $limit) : array
 {
-	$i = 0;
+	$i = 1;
+	$pattern = [];
 
 	while($i <= $limit){
-		$yield = null;
+		$yield = '';
 
-		if($i % 3 == 0) {$yield = 'fizz';}
-		if($i % 5 == 0) {$yield .= 'buzz';}
-		yield $yield;
+		if($i % 3 == 0) { $yield = 'fizz'; }
+		if($i % 5 == 0) { $yield .= 'buzz'; }
+		if(!$yield) { $yield = $i; }
+		
+		array_push($pattern, $yield);
+
 		$i++;
 	}
 
-	return;
+	return $pattern;
 }
 
-foreach (fizzbuzz(25) as $key => $value) {
-	echo "$key => $value \n";
-}
+var_dump(json_encode(fizzbuzz(20)));
