@@ -19,5 +19,3 @@ function fizzbuzz(int $limit) : array
 
 	return $pattern;
 }
-
-var_dump(json_encode(fizzbuzz(20)));

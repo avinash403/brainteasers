@@ -18,5 +18,3 @@ function fibonacci($number)
 
 	return $fibonacci;
 }
-
-var_dump(fibonacci(5));
