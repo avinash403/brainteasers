@@ -35,3 +35,26 @@ and for the multiples of '5' return "buzz". For multiple of both return "fizzbuz
 output: [1,2,"fizz",4,"buzz","fizz",7,8,"fizz","buzz",11,"fizz",13,14,"fizzbuzz",16,17,"fizz",19,"buzz"]
 ```
 [click here to see the solution](https://github.com/avinash403/brainteasers/blob/master/easy/fizzbuzz.php)
+
+#### 3. Pallindrome
+
+A palindrome is a word that reads the same backward or forward.
+
+Write a function that checks if a given word is a palindrome. Character case should be ignored.
+
+For example, isPalindrome("Deleveled") should return true as character case should be ignored, resulting in "deleveled", which is a palindrome since it reads the same backward and forward.
+
+```
+<?php
+    function isPalindrome(string $string) : string
+    {
+      //write your code here
+    }
+
+    var_dump(isPalindrome('Deleveled'));
+?>
+
+output: true
+```
+[click here to see the solution](https://github.com/avinash403/brainteasers/blob/master/easy/pallindrome.php)
+
