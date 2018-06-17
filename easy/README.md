@@ -46,7 +46,7 @@ For example, isPalindrome("Deleveled") should return true as character case shou
 
 ```
 <?php
-    function isPalindrome(string $string) : string
+    function isPalindrome(string $string) : bool
     {
       //write your code here
     }
@@ -68,7 +68,7 @@ the groupByOwners function should return ["Randy" => ["Input.txt", "Output.txt"]
 
 ```
 <?php
-    function groupByOwners(string $string) : string
+    function groupByOwners(array $files) : array
     {
       //write your code here
     }
